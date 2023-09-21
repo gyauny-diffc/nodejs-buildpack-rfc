@@ -836,6 +836,8 @@ else
 	export NODE_PATH=${NODE_PATH:-"$HOME/node_modules"}
 fi
 export PATH=$PATH:"$HOME/bin":$NODE_PATH/.bin
+export LD_LIBRARY_PATH=/home/vcap/app/sap/nwrfcsdk/lib/
+export SAPNWRFC_HOME=/home/vcap/app/sap/nwrfcsdk
 `
 
 	requiresSSLEnvVars, err := nodeVersionRequiresSSLEnvVars(s.NodeVersion)
